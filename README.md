@@ -120,3 +120,16 @@ curl -X POST -H 'content-type: application/json' -d '{"action": "inc"}' https://
 ## License
 
 [MIT](./LICENSE)
+
+模板二次开发
+使用模板二次开发会复制代码到指定仓库，并自动创建该仓库 CI/CD 流水线，
+二次开发后代码 Push 即可触发部署更新。
+
+代码复制完成，你可以进行以下操作进行二次开发：
+
+从 Git 上拉取仓库
+
+git clone https://github.com/firecodes/guanmiaomizhan.git
+修改代码，并提交到 Git 仓库上触发流水线更新
+
+git commit -m 'update' && git push -u origin master
